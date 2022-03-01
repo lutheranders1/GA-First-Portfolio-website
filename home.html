@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <script src="app.js"></script>
+    
 
     <link
       rel="stylesheet"
@@ -40,9 +39,10 @@
         alt="jamaica"
       />
       <section class="home-form">
-      <div class="centered">Welcome!</div>
+      <p class="centered">Welcome!
+      </p>
       
-        <p>Connect with me today</p>
+        <p id="header-homeform">Connect with me today</p>
         <form action="/action_page.php">
           <label for="fname">Name:</label>
           <input type="text" id="email" name="email" /><br /><br />
@@ -52,13 +52,28 @@
         </form>
       </section>
     </div>
+    <h3>Photos from My Home Country</h3>
+    <button class="accordion">St. Ann</button>
+<div class="panel">
+  <img src="https://wallpaperaccess.com/full/1149925.jpg" alt="jamaica" id="midimg">
+</div>
+
+<button class="accordion">Porland</button>
+<div class="panel">
+  <img src="https://wallpapercave.com/wp/wp3427375.jpg" alt="jamaica" id="midimg">
+</div>
+
+<button class="accordion">Trelawny</button>
+<div class="panel">
+  <img src="https://c4.wallpaperflare.com/wallpaper/124/983/591/coast-blue-water-blue-sea-caribbean-sea-wallpaper-preview.jpg" alt="jamaica" id="midimg">
+</div>
     <section class="midsection">
-        <img src="https://wallpaperaccess.com/full/1149925.jpg" alt="jamaica">
-        <img src="https://wallpapercave.com/wp/wp3427375.jpg" alt="jamaica">
-        <img src="https://c4.wallpaperflare.com/wallpaper/124/983/591/coast-blue-water-blue-sea-caribbean-sea-wallpaper-preview.jpg" alt="jamaica">
-        <img src="https://backiee.com/static/wpdb/wallpapers/1920x1080/169018.jpg" alt="jamaica">
-        <img src="https://wallpaperaccess.com/full/1149936.jpg" alt="jamaica">
-        <img src="https://boomersdaily.files.wordpress.com/2021/05/aerial-views-montego-bay-jamaica-video-may-4-2021.jpg?w=672&h=372&crop=1" alt="jamaica">
+        <img src="https://wallpaperaccess.com/full/1149925.jpg" alt="jamaica" id="midimg">
+        <img src="https://wallpapercave.com/wp/wp3427375.jpg" alt="jamaica" id="midimg">
+        <img src="https://c4.wallpaperflare.com/wallpaper/124/983/591/coast-blue-water-blue-sea-caribbean-sea-wallpaper-preview.jpg" alt="jamaica" id="midimg">
+        <img src="https://backiee.com/static/wpdb/wallpapers/1920x1080/169018.jpg" alt="jamaica" id="midimg">
+        <img src="https://wallpaperaccess.com/full/1149936.jpg" alt="jamaica" id="midimg">
+        <img src="https://boomersdaily.files.wordpress.com/2021/05/aerial-views-montego-bay-jamaica-video-may-4-2021.jpg?w=672&h=372&crop=1" alt="jamaica" id="midimg">
     </section>
    
     <footer class="foot">
@@ -71,4 +86,6 @@
         </ul>
     </footer>
   </body>
+  <script src="app.js" ></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </html>
