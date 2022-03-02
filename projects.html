@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="http://www.clker.com/cliparts/v/m/u/Y/P/B/circle-sroll-letter-l-monogram-hi.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="projbody">
+     <nav class="nav-bar">
+      <h1 id="logo-nav">Luther.</h1>
+      <a href="home.html">Home</a>
+      <a href="bio.html">Bio</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <button>Sign Up</button>
+    </nav> 
+    <div class ="middle"></div>   
+    <section class= calcdiv> 
+        <h4>Simple Interest Calculator</h4>
+       <h4>Amount</h4> <br> <input type="number"  id="principal">  
+        <h4>Rate</h4>  <input type="range" min="1" max="20" value="10"  id="rate" step="0.25" name="rate" autocomplete="off"> 
+        <P id="rate_val"></p>
+      
+        <h4>Number of years</h4><select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+        </select>  <br/>
+        <h4>Interest :</h4> <P id="rate_val"></p>
+
+        <button id="btn">Compute Interest</button>
+        <span id="result">
+
+        </span>
+    </section>
+    </body>
+    <footer>
+
+        &#169; This Calculator belongs to Luther Anderson
+    
+      </footer>
+  </body>
+  
+  <script src="app.js"></script>
+</html>
