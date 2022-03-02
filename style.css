@@ -303,7 +303,7 @@ progress{
   .centered {
         top: 50%;
         left: 50%;
-        transform: translate(-100%, -50%);
+        transform: translate(-70%, -60%);
         color: white;
         font-size: 2.5em;
         font-family: 'IBM Plex Serif', serif;
@@ -395,7 +395,7 @@ header,#bio{
 
 .middle{
     width: 10%;
-    /* height: 10%; */
+     
 
 }
 .calcdiv {
@@ -461,6 +461,7 @@ header,#bio{
         
         font-size: 1em;
         font-family: 'IBM Plex Serif', serif;
+        color:white
     }
     h3{
         font-size: 0.6em;
@@ -471,11 +472,9 @@ header,#bio{
         font-family: 'IBM Plex Serif', serif;
         color: white;
         font-size:2em;
-        position: fixed;
+        
     }
-    h1{
-        position: fixed;
-    }
+    
     p{
         font-size: 10px;
         font-family: 'IBM Plex Serif', serif;
@@ -485,8 +484,9 @@ header,#bio{
     progress{
         display: none;
     }
-    h1,h2{
-        margin-top: 5%;
+    h1{
+        margin-top: 13%;
+        margin-bottom: 1%;
         color:white
     }
     div{
@@ -523,6 +523,7 @@ header,#bio{
 
    
 }
+
 form{
 
   width: 20vw;
@@ -534,9 +535,12 @@ form{
 input,label{
     display: flex;
     transform: translateY(-70%);
-    width: 15vw;
+    width: 20vw;
     height:3vh;
 
+}
+#btn{
+    width: 100%;
 }
 .centered{
     
@@ -546,6 +550,7 @@ input,label{
     font-weight: bolder;
      background-color: black;
      margin: 0 auto;
+     transform: translate(-140%,-50%);
     
   }
   #header-homeform{
