@@ -143,9 +143,14 @@ color: white;
     
     
 }
-h2,h3,h4{
+h2,h3{
     
     font-size: 2em;
+    font-family: 'IBM Plex Serif', serif;
+}
+h4{
+    transform: translateY(50%);
+    font-size: 8vh;
     font-family: 'IBM Plex Serif', serif;
 }
 p{
@@ -461,8 +466,9 @@ header,#bio{
         font-family: 'IBM Plex Serif', serif;
     }
     h4{
-        font-size: 0.7em;
+        transform: translateY(50%);
         font-family: 'IBM Plex Serif', serif;
+        color: white;
     }
     p{
         font-size: 10px;
@@ -552,18 +558,16 @@ input,label{
     display: flex;
     background-color: white;
     color: black;
-    width: 50%;
+    width:50%;
     padding: 5%;
-    margin: 25%;
+    margin: 10%;
     border-radius: 5%;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    transform: translate(30%,0%);
 
 }
-.middle{
-    width: 50%;
-    height: 100%;
-}
+
 }
 /* End of Media queries*/
