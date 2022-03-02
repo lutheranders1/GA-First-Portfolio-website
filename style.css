@@ -410,6 +410,8 @@ header,#bio{
     text-align: center;
     flex-direction: column;
     align-items: center;
+    background:linear-gradient( rgb(157, 243, 145), rgb(51, 48, 48));
+    border-color: black;
 }
 #btn{
     font-size:medium;
@@ -469,6 +471,7 @@ header,#bio{
         transform: translateY(50%);
         font-family: 'IBM Plex Serif', serif;
         color: white;
+        font-size:2em;
     }
     p{
         font-size: 10px;

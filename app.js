@@ -23,6 +23,7 @@ formsub.addEventListener("submit", (e) => {
 });
 
 /****************************************************/
+
 function compute() {
   let principal = document.getElementById("principal").value;
 
