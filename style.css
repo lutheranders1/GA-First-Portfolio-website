@@ -50,7 +50,7 @@ body{
 
 .nav-bar{
     display: flex;
-    height: 8vh;
+    height: 9.5vh;
     flex-wrap: nowrap;
     align-items: center;
     position: fixed;
@@ -471,6 +471,10 @@ header,#bio{
         font-family: 'IBM Plex Serif', serif;
         color: white;
         font-size:2em;
+        position: fixed;
+    }
+    h1{
+        position: fixed;
     }
     p{
         font-size: 10px;
