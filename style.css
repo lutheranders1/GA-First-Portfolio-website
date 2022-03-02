@@ -419,10 +419,9 @@ header,#bio{
         height: 20%;
 }
 
+/*end of project page*/
 
-    /*end of project page*/
-
-/*Media Queries*/
+/*Media Queries Section*/
 
 @media screen and (max-width: 900px) {
     
