@@ -166,6 +166,9 @@ p{
     align-items: flex-start;
 }
 
+.pro-nav-logo{
+    color: black
+}
 
 #main-container-box{
     height: 100%;
@@ -231,6 +234,17 @@ progress{
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+.proj-img{  
+    margin-top: 10%;
+    width:30%;
+    
+}
+.center{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 
