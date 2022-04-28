@@ -71,8 +71,7 @@ body{
 }
 
 .nav-bar a:hover {
-    background-color: rgba(0, 0, 0, 0.739);
-  color: rgb(255, 255, 255);
+  color: rgb(114, 113, 113);
   border-color: #030303;
   height: 25px;
   width: 100px;
@@ -236,8 +235,9 @@ progress{
     flex-wrap: nowrap;
 }
 .proj-img{  
-    margin-top: 10%;
+    margin-top: 5%;
     width:30%;
+    
     
 }
 .center{  
@@ -245,6 +245,8 @@ progress{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    border-color: rgb(28, 43, 203);
+    border-width: 3px ;
 }
 
 
