@@ -270,7 +270,20 @@ progress{
     flex-wrap: nowrap;
 }
 
-
+.fade {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+  
+@keyframes fadeInAnimation{
+    10% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
 /* Start of home Page*/
 .panel {
