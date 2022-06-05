@@ -270,6 +270,7 @@ progress{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    text-decoration: none;
   }
 
   #overlay1 {
@@ -284,6 +285,7 @@ progress{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    text-decoration: none;
   }
   #overlay2 {
     position:fixed;
@@ -297,6 +299,7 @@ progress{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    text-decoration: none;
   }
   #overlay3 {
     position:fixed;
@@ -310,43 +313,48 @@ progress{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    text-decoration: none;
   }
   
   #text{
     position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
+  font-size: 2em;
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  text-decoration: none;
   }
   #text1{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 2em;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    text-decoration: none;
   }
   #text2{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 2em;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    text-decoration: none;
   }
   #text3{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 50px;
+    font-size: 2em;
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    text-decoration: none;
   }
 
 
