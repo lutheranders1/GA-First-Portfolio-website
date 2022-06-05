@@ -49,12 +49,40 @@ function compute() {
 }
 
 function SliderValue() {
-  var slider = document.getElementById("rate");
-  var output = document.getElementById("rate_val");
+  let slider = document.getElementById("rate");
+  let output = document.getElementById("rate_val");
   output.innerHTML = slider.value; // Display the default slider value
 
   // Update the current slider value (each time you drag the slider handle)
   slider.onchange = function () {
     output.innerHTML = this.value;
   };
+}
+
+/**************************************/
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+}
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+}
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
 }
