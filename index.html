@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="fade">
         <h2>About Me</h2>
         <p>Hello! I'm a passionate Data Analyst and Full Stack Software Engineer At PSEG Long Island, our team's business 
             intelligence solutions have propelled a resolution rate to 94.1%, largely due to my proficiency in 
@@ -27,47 +27,57 @@
             managerial role to a focused technical path in data analytics 
             underscores a commitment to continuous learning and applying diverse skill sets. 
             Alongside my role, I maintain fluency in HTML5,CSS,JavaScript and Python in addition to Django, React and Redux further blending my technical acumen with 
-            a strong foundation in full-stack development acquired from General Assembly..</p>
+            a strong foundation in full-stack development acquired from General Assembly.</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade">
         <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project">
-                <h3>Danny's Diner SQL Case Study</h3>
-                <p>Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns,
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">Danny's Diner SQL Case Study</div>
+                <div class="accordion-content">
+                    <p>Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns,
                 how much money they’ve spent, andwhich menu items are their favourite.
                 Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
                 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program — 
                 additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL..</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Tableau Dashboards</h3>
-                <p>A brief description of Project 2.</p>
+            <div class="accordion-item">
+                <div class="accordion-header">Tableau Dashboards</div>
+                <div class="accordion-content">
+                    <p>A brief description of Project 2.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>R Programming Case Study</h3>
-                <p>A brief description of Project 3.</p>
+            <div class="accordion-item">
+                <div class="accordion-header">R Programming Case Study</div>
+                <div class="accordion-content">
+                    <p>A brief description of Project 3.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Python Case Study</h3>
-                <p>A brief description of Project 4.</p>
+            <div class="accordion-item">
+                <div class="accordion-header">Python Programming Case Study</div>
+                <div class="accordion-content">
+                    <p>A brief description of Project 3.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Bellabeat Case Study</h3>
-                <p>The case study follows the six step data analysis process taught in the Google course: Ask, Prepare, Process, Analyse, Share and Act.
+            <div class="accordion-item">
+                <div class="accordion-header">Bellabeat Case Study-Excel</div>
+                <div class="accordion-content">
+                    <p>The case study follows the six step data analysis process taught in the Google course: Ask, Prepare, Process, Analyse, Share and Act.
                     Scenario: Since it was founded in 2013, Bellabeat has grown rapidly and quickly positioned itself as a tech-driven wellness company for women. 
                     The company has 5 focus products: bellabeat app, leaf, time, spring and bellabeat membership. Bellabeat is a successful small company, 
                     but they have the potential to become a larger player in the global smart device market. 
                     Our team have been asked to analyze smart device data to gain insight into how consumers are using their smart devices.
                     The insights we discover will then help guide marketing strategy for the company..</p>
+                </div>
             </div>
-        </div>
-        <p>Explore my projects and skills as a Data Analyst.</p>
+            <p>Explore my projects and skills as a Data Analyst.</p>
     <a href="https://github.com/lutheranders1/Data-Analyst-Portfolio" target="_blank">View my GitHub Portfolio</a>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade">
         <h2>Contact Me</h2>
         <form action="#" method="post">
             <label for="name">Name:</label>
@@ -83,5 +93,7 @@
     <footer>
         <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
