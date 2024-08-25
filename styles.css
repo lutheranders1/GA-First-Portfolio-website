@@ -1,10 +1,12 @@
-/* styles.css */
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -14,9 +16,13 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 nav ul li {
@@ -31,17 +37,68 @@ nav ul li a {
 
 section {
     padding: 20px;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
     border: 1px solid #ccc;
-    margin: 10px 0;
+    width: calc(30% - 40px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin: 5px 0;
+}
+
+form button {
+    background: #333;
+    color: #fff;
     padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     background: #333;
     color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project {
+        width: calc(45% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
