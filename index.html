@@ -1,101 +1,59 @@
+# Data Analyst Portfolio Website
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="icon"
-      href="http://www.clker.com/cliparts/v/m/u/Y/P/B/circle-sroll-letter-l-monogram-hi.png"
-      type="image/x-icon"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Data Analyst Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="fade">
-    <nav class="nav-bar">
-      <h1 id="logo-nav">Luther.</h1>
-      <a href="index.html">Home</a>
-      <a href="bio.html">Bio</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      
-    </nav>
-    <div class="row">
-      <img
-        src="https://media.timeout.com/images/105240050/image.jpg"
-        alt="Jamaica" class="top"
-      />
-      <img
-        src="https://free4kwallpapers.com/uploads/originals/2015/10/10/goldeneye-jamaica--wallpaper.jpg"
-        alt="jamaica"
-      />
-      <section class="home-form">
-      <p class="centered">Welcome!
-      </p>
-      
-        <p id="header-homeform">Connect with me today</p>
-        <form class="main-form">
-          <label for="fname">Name:</label>
-          <input type="text" id="name" name="fname" autocomplete="off" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" autocomplete="off" />  <br />
-          <input type="submit" value="Send" id="bttn" autocomplete="off"/>
-          <a href="projects.html"><input type="button" value="Projects"  autocomplete="off"/></a> 
-        </form>
-      </section>
-    </div>
-    
-    <h3>My Software Stack Skills:</h3>
-    
-    <button class="accordion">Frontend (HTML, CSS, JavaScript, JQuery, React, Nodejs, Expressjs, Bootstrap)</button>
-<div class="panel">
-  <img class="skill-icon" src="https://i.ibb.co/nnrvDPY/frontend.jpg" alt="jamaica" id="midimg">
-</div>
-
-<button class="accordion">Backend (Python, Django, Java, Spring)</button>
-<div class="panel">
-  <img class="skill-icon" src="https://blog.knoldus.com/wp-content/uploads/2020/06/python-django.png" alt="jamaica" id="midimg">
-
-  <img class="skill-icon" src="https://media-exp1.licdn.com/dms/image/C5612AQEzIUKfbUUNWw/article-cover_image-shrink_600_2000/0/1640701919659?e=2147483647&v=beta&t=_GgQWOSDG_nklkJef1XqFVHk68CKCsKIBohmCzkJk-Q" alt="java"/>
-</div>
-
-<button class="accordion">Database & Server( PostgresSQL, AWS, MongoDB, Heroku, Github)</button>
-<div class="panel">
-  <img class="skill-icon" src="https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Untitled-design-8-1.png" alt="jamaica" id="midimg">
-  <img class="skill-icon" src="https://miro.medium.com/max/780/1*dQUsZ06rPA0O4qIatxuYhA.jpeg"/>
-  <img class="skill-icon" src="https://www.kindpng.com/picc/m/128-1280187_github-logo-png-github-transparent-png.png"/>
-
-</div>
-    <section class="midsection">
-        <img src="https://wallpaperaccess.com/full/1149925.jpg" alt="jamaica" id="midimg">
-        <img src="https://wallpapercave.com/wp/wp3427375.jpg" alt="jamaica" id="midimg">
-        <img src="https://c4.wallpaperflare.com/wallpaper/124/983/591/coast-blue-water-blue-sea-caribbean-sea-wallpaper-preview.jpg" alt="jamaica" id="midimg">
-        <img src="https://backiee.com/static/wpdb/wallpapers/1920x1080/169018.jpg" alt="jamaica" id="midimg">
-        <img src="https://wallpaperaccess.com/full/1149936.jpg" alt="jamaica" id="midimg">
-        <img src="https://boomersdaily.files.wordpress.com/2021/05/aerial-views-montego-bay-jamaica-video-may-4-2021.jpg?w=672&h=372&crop=1" alt="jamaica" id="midimg">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate data analyst with experience in data visualization, statistical analysis, and data-driven decision making.</p>
     </section>
-   
-    <footer class="foot">
-      <div class="social-container">
-        <ul class="social-icons">
-            <li><a target="_blank" href="https://www.linkedin.com/in/luther-andrew-anderson-b6754663/"><i class="fa fa-instagram"></i></a></li>
-            <li><a  target="_blank" href="https://www.linkedin.com/in/luther-andrew-anderson-b6754663/"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/luther-andrew-anderson-b6754663/"><i class="fa fa-linkedin"></i></a></li> 
-            <li><a target="_blank" href="https://github.com/lutheranders1/"><i class="fa fa-github"></i></a></li> 
-        </ul>
-    </footer>
-    
-  </body>
-  <script src="app.js" ></script>
-  
 
-  
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Sales Analysis</h3>
+            <p>A comprehensive analysis of sales data to identify trends and insights.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Customer Segmentation</h3>
+            <p>Segmenting customers based on purchasing behavior to enhance marketing strategies.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Data Analyst Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
