@@ -7,12 +7,13 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
 header {
-    background: #333;
+    background: #4a90e2; /* Blue background */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -33,11 +34,19 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe600; /* Yellow on hover */
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 10px;
+    border-radius: 8px; /* Rounded corners */
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-container {
@@ -51,7 +60,14 @@ section {
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
     width: calc(30% - 40px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -63,22 +79,30 @@ form label, form input, form textarea {
     margin: 5px 0;
 }
 
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+}
+
 form button {
-    background: #333;
+    background: #4a90e2; /* Blue button */
     color: #fff;
     padding: 10px;
     border: none;
+    border-radius: 4px; /* Rounded corners */
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #555;
+    background: #2d6ca2; /* Darker blue on hover */
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #4a90e2; /* Blue footer */
     color: #fff;
     position: relative;
     bottom: 0;
