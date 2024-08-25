@@ -52,19 +52,19 @@ section {
 }
 
 #about {
-    background-image: url('https://source.unsplash.com/random/800x400/?coding'); /* Background for About */
+    background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/data_analyticstrendsmin.jpg'); /* Background for About */
     background-size: cover;
     color: white;
 }
 
 #projects {
-    background-image: url('https://source.unsplash.com/random/800x400/?development'); /* Background for Projects */
+    background-image: url('https://www.freecodecamp.org/news/content/images/2020/10/analytics-4.pngt'); /* Background for Projects */
     background-size: cover;
     color: white;
 }
 
 #contact {
-    background-image: url('https://source.unsplash.com/random/800x400/?contact'); /* Background for Contact */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8esMZZ3_0ExtQcVgmptIl_iHDHiurURQAw&s'); /* Background for Contacts */
     background-size: cover;
     color: white;
 }
