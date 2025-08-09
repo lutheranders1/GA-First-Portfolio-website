@@ -1,104 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luther Anderson Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luther Anderson — Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Luther Anderson — Data Analyst specializing in SQL, Python, Power BI, and Tableau." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Luther Anderson Data Analyst Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Skip link for a11y -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section id="about" class="fade">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate Data Analyst and Full Stack Software Engineer At PSEG Long Island, our team's business 
-            intelligence solutions have propelled a resolution rate to 94.1%, largely due to my proficiency in 
-            Tableau and data analytics. My Master's in Systems Engineering and Statistics from the University of 
-            Tennessee amplifies my ability to deliver in-depth performance analysis and actionable insights.The transition from Amazon's 
-            managerial role to a focused technical path in data analytics 
-            underscores a commitment to continuous learning and applying diverse skill sets. 
-            Alongside my role, I maintain fluency in HTML5,CSS,JavaScript and Python in addition to Django, React and Redux further blending my technical acumen with 
-            a strong foundation in full-stack development acquired from General Assembly.</p>
-    </section>
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home">
+        <img src="Logo.png" alt="LA monogram logo" />
+        <span>Luther Anderson</span>
+      </a>
 
-    <section id="projects" class="fade">
-        <h2>My Projects</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <div class="accordion-header">Danny's Diner SQL Case Study</div>
-                <div class="accordion-content">
-                    <p>Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns,
-                how much money they’ve spent, andwhich menu items are their favourite.
-                Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
-                He plans on using these insights to help him decide whether he should expand the existing customer loyalty program — 
-                additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL..</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">Tableau Dashboards</div>
-                <div class="accordion-content">
-                    <p>Please see  below for links to my Tableau Dashbaords.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">Bike Sharing Small business-R Programming Case Study</div>
-                <div class="accordion-content">
-                    <p> In this case study, I performed many real-world tasks of a junior data analyst. I worked for a fictional company, Cyclistic, and meet different characters and team members. 
-                        In order to answer the key business questions, I followed the steps of the data analysis process: ask, prepare, process, analyze, share, and act.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">Case Study: Bike Sales Analysis using Python.</div>
-                <div class="accordion-content">
-                    <p>In this data analysis project, we will dive into a bicycle company’s sales data to gain valuable insights and uncover trends. 
-                        By following a systematic step-by-step approach, we will explore the dataset, clean and preprocess the data, perform various analyses, 
-                        visualise the results, and discuss the results obtained from our analysis..</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">Bellabeat Case Study-Excel</div>
-                <div class="accordion-content">
-                    <p>The case study follows the six step data analysis process taught in the Google course: Ask, Prepare, Process, Analyse, Share and Act.
-                    Scenario: Since it was founded in 2013, Bellabeat has grown rapidly and quickly positioned itself as a tech-driven wellness company for women. 
-                    The company has 5 focus products: bellabeat app, leaf, time, spring and bellabeat membership. Bellabeat is a successful small company, 
-                    but they have the potential to become a larger player in the global smart device market. 
-                    Our team have been asked to analyze smart device data to gain insight into how consumers are using their smart devices.
-                    The insights we discover will then help guide marketing strategy for the company..</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-            <div class="accordion-header">Links to  my projects as a Data Analyst.</div>
-            <div class="accordion-content"><a href="https://github.com/lutheranders1/Data-Analyst-Portfolio" target="_blank">View my GitHub Portfolio</a></div>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" id="navToggle">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        <li><a href="#contact" class="btn btn--sm">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero__copy">
+        <h1>Turning messy data into <span class="accent">decision-ready</span> insights.</h1>
+        <p>
+          I’m a Data Analyst focused on forecasting, customer segmentation, and automation.
+          I work across <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>, and <strong>Tableau</strong>
+          to ship dashboards and analysis that teams actually use.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Work with me</a>
         </div>
+
+        <ul class="hero__metrics" aria-label="Impact metrics">
+          <li><span class="num" data-count="11">0</span> teams enabled</li>
+          <li><span class="num" data-count="250">0</span> days/year ops data tracked</li>
+          <li><span class="num" data-count="45">0</span> $/hr cost basis modeled</li>
+        </ul>
+      </div>
+
+      <figure class="hero__img">
+        <img src="luther-bio.jpg" alt="Portrait of Luther Anderson" />
+      </figure>
     </section>
 
-    <section id="contact" class="fade">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <!-- SKILLS -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section__title">Skills & Tools</h2>
+      <p class="section__lede">Bread-and-butter analytics stack plus the things that make shipping faster.</p>
+
+      <div class="badges">
+        <span class="badge">SQL</span>
+        <span class="badge">Python</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">DAX</span>
+        <span class="badge">Tableau</span>
+        <span class="badge">Excel / Power Query</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">REST APIs</span>
+        <span class="badge">Statistical Modeling</span>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
-    </footer>
+    <!-- PROJECTS -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section__header">
+        <h2 id="projects-title" class="section__title">Projects</h2>
+        <p class="section__lede">Filter by tool or search by keyword. Click for a quick case summary.</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="controls">
+        <div class="filters" id="filters">
+          <!-- JS will inject filter buttons from project tags -->
+        </div>
+
+        <label class="search">
+          <span class="sr-only">Search projects</span>
+          <input id="projectSearch" type="search" placeholder="Search (e.g., 'forecast', 'SQL', 'Tableau')" />
+        </label>
+      </div>
+
+      <div class="grid" id="projectGrid" role="list">
+        <!-- JS renders project cards here -->
+      </div>
+
+      <!-- Modal -->
+      <dialog id="projectModal" class="modal" aria-labelledby="modalTitle">
+        <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+        <div class="modal__content">
+          <h3 id="modalTitle"></h3>
+          <p class="modal__meta" id="modalMeta"></p>
+          <p id="modalDesc"></p>
+          <div class="modal__links" id="modalLinks"></div>
+          <div class="modal__shots" id="modalShots"></div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="section__title">About</h2>
+      <div class="about">
+        <p>
+          I build reliable analytics for operations and customer teams—things like workforce trackers,
+          payment and billing insights, and retention forecasting. My work blends
+          <strong>data modeling</strong>, <strong>visualization</strong>, and <strong>process automation</strong>.
+        </p>
+        <p>
+          Recently, I’ve focused on improving cycle times with Power BI and Python, quantifying benefits,
+          and building trackers that hold up under real-world usage.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section container" id="resume" aria-labelledby="resume-title">
+      <h2 id="resume-title" class="section__title">Résumé</h2>
+      <p class="section__lede">Quick highlights—full PDF below.</p>
+
+      <ul class="timeline">
+        <li>
+          <h3>PSEG Long Island — Senior Data Analyst</h3>
+          <p>Automation, dashboards, KPI development, and benefit quantification for operations initiatives.</p>
+        </li>
+        <li>
+          <h3>SunPower — Escalation Specialist</h3>
+          <p>Customer analytics and process fixes that reduced time-to-resolution.</p>
+        </li>
+      </ul>
+
+      <div class="resume__cta">
+        <a class="btn" href="ScreenshotResume2.jpg" download>Download PDF</a>
+        <a class="btn btn--ghost" href="resume.html">View full résumé</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section__title">Contact</h2>
+      <form class="contact" id="contactForm" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p class="form__note">Prefer email? <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Luther Anderson</small>
+      <a class="footer__gh" href="https://github.com/lutheranders1" target="_blank" rel="noopener">GitHub</a>
+      <a class="footer__li" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
